@@ -20,7 +20,7 @@ class GeminiWss:
 
         self.endpoints = endpoints if endpoints else []
         self.endpoint_threads = {}
-        self.running = defaultdict(bool)
+        self.running = {}
         self.endpoint_qs = defaultdict(Queue)
 
         self.addr = 'wss://api.gemini.com/v1/'
